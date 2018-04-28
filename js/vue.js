@@ -22,10 +22,25 @@ var suma = new Vue({
     },
 
     computed:{
-        total:{
-            function(){
+        total: function(){
                 return this.suma = this.uno + this.dos + this.tres + this.cuatro;
-            }
         }
+
+    }
+})
+
+var elif = new Vue({
+    el: '#elif',
+    data: {
+        bandera: false
+    },
+    methods:{
+      cambiar: function(){
+          if(bandera){
+              this.bandera = false
+          }else{
+              this.bandera=true
+          }
+      }
     }
 })
