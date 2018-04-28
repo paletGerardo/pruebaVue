@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+        <p>{{ getMessage()}}</p>
+        <img v-bind:src="src" alt="">
+        <button v-on:click="message = 'apredato'">{{ message }}</button>
+    </div>
+
+    <div id="suma">
+        <button v-on:click="uno++">uno</button>
+        <button v-on:click="dos++">uno</button>
+        <button v-on:click="tres++">uno</button>
+        <button v-on:click="cuatro++">uno</button>
+        <hr>
+        <p>uno: {{uno}}</p>
+        <p>uno: {{dos}}</p>
+        <p>uno: {{tres}}</p>
+        <p>uno: {{cuatro}}</p>
+        <p>suma total: {{total}}</p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/vue.js"></script>
+</body>
+
+</html>
